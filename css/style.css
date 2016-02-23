@@ -1099,7 +1099,7 @@ header .header-main .block-header-contacts button:focus {
   font-family: 'Roboto Condensed', sans-serif;
   float: left;
   text-align: center;
-  padding-right: 65px;
+  padding-right: 64px;
 }
 /* line 516, ../scss/style.scss */
 .block-main-prices .main-rooms .tab .block-conditions ul li:last-child {
