@@ -1,0 +1,360 @@
+@media all and (max-width: 1195px) {
+	.container {
+		max-width: 965px;
+	}
+	header {
+		.header-top {
+			.header-menu {
+				margin-top: 15px;
+				margin-right: 40px;
+				#show-menu {
+					@include btn-main-full;
+					display: block;
+					width: 188px;
+					padding-top: 10px;
+					padding-bottom: 10px;
+				}
+				ul {
+					float: left;
+					display: none;
+					li {
+						float: none;
+						padding-top: 17px;
+						padding-bottom: 13px;
+						a {
+							padding: 17px 12px 13px 13px;
+						}
+					}
+				}
+			}
+		}
+		.header-main {
+			position: relative;
+			padding-top: 35px;
+			.block-header-main {
+				.block-benefits {
+					padding-top: 35px;
+				}
+			}
+			.block-header-contacts {
+				position: absolute;
+				top: 350px;
+			}
+		}
+	}
+	.block-main-menu {
+		.main-menu {
+			.main-contacts {
+				display: none;
+			}
+			.main-order {
+				button {
+					padding-right: 15px;
+					padding-left: 15px;
+					&:before {
+						left: 15px;
+					}
+				}
+			}
+		}
+	}
+	.block-main-prices {
+		.main-rooms {
+			.ui-tabs-vertical .ui-tabs-panel {
+				width: 80%;
+			}
+			.ui-tabs-vertical .ui-tabs-nav {
+				width: 150px;
+			}
+			.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+			ul {
+				li {
+					a {
+						@each $i in both, female, male {
+							&.#{$i}:before {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+			.tab {
+				.tab-info {
+					.block-info {
+						width: 49%;
+						.text.price {
+							span {
+								padding-right: 15px;
+							}
+						}
+					}
+					.block-img {
+					}
+				}
+				.block-conditions {
+					ul {
+						.block-left {
+							float: left;
+						}
+						li {
+							padding-right: 35px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.block-main-reviews {
+		padding-right: 100px;
+		padding-left: 100px;
+	}
+	footer {
+		.block-form {
+			margin-left: 35px;
+		}
+	}
+}
+
+@media all and (max-width: 980px) {
+	.container {
+		max-width: 660px;
+	}
+	header {
+		.header-main {
+			padding-bottom: 30px;
+			.block-header-main {
+				h1 {
+					font-size: 55px;
+				}
+				.block-benefits {
+					.block-benefit {
+						margin-left: auto !important;
+						margin-right: auto !important;
+						margin-bottom: 10px;
+						float: none;
+						border: 1px solid #fff;
+						background-color: rgba(#fff, 0.3);
+						width: 50% !important;
+						height: 20% !important;
+						text-align: center;
+						@each $i in left, center, right {
+							&.#{$i} {
+								&:after {
+									display: none;
+								}
+								&:before {
+									top: 25px;
+									bottom: 0;
+									left: 10px;
+								}
+							}
+						}
+						.text {
+							padding: 25px 0 25px 71px !important;
+						}
+						&.center {
+							top: 0;
+						}
+						&.right {
+							top: 0;
+							.text {
+								margin-left: 0;
+							}
+						}
+					}
+				}
+				button {
+					@include btn-main-full;
+					float: none;
+					margin: 10px auto 0;
+					width: 50%;
+				}
+			}
+			.block-header-contacts {
+				display: none;
+			}
+		}
+	}
+	.block-main-menu {
+		display: none;
+	}
+	.block-main-prices {
+		margin-bottom: 30px;
+		.main-rooms {
+			.ui-tabs-vertical .ui-tabs-panel {
+				width: 70%;
+				padding-right: 20px;
+			}
+			.tab {
+				.tab-info {
+					margin-bottom: 25px;
+					.block-info {
+						width: 100%;
+						float: none;
+						h3 {
+							margin-bottom: 20px;
+						}
+						.text {
+							margin-bottom: 15px;
+						}
+						.text.price {
+							margin-bottom: 15px;
+						}
+						button {
+							max-width: 350px;
+							margin: 0 auto;
+						}
+					}
+					.block-img {
+						float: none;
+						text-align: center;
+						margin-top: 20px;
+					}
+				}
+				.block-conditions {
+					margin-left: 45px;
+					ul {
+						li {
+							div {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.block-main-reviews {
+		.bx-wrapper .bx-viewport {
+			height: 312px !important;
+		}
+	}
+	footer {
+		background-size: cover;
+		.block-contacts {
+			float: none;
+			margin: 0 auto;
+		}
+		.block-form {
+			margin-left: 125px;
+			margin-right: 107px;
+			margin-bottom: 20px;
+			margin-top: 60px;
+			float: none;
+		}
+	}
+}
+@media all and (max-width: 645px) {
+	header {
+		.header-top {
+			padding-bottom: 0;
+			.language {
+				float: right;
+				padding-right: 20px;
+			}
+			.header-menu {
+				float: none;
+				margin-top: 70px;
+				margin-right: 0;
+				button {
+					margin: 0 auto;
+					margin-bottom: 15px;
+				}
+				ul {
+					width: 100%;
+					text-align: center;
+					padding-top: 0;
+					li {
+						padding-bottom: 0;
+						padding-top: 0;
+						a {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+		.header-main {
+			padding-bottom: 20px;
+			.block-header-main {
+				.highlight {
+					padding: 10px 45px;
+				}
+				.block-benefits {
+					.block-benefit {
+						width: 95% !important;
+						&:before {
+							display: none !important;
+						}
+						.text {
+							padding: 15px 0 !important;
+						}
+					}
+				}
+				button {
+					width: 95%;
+				}
+			}
+		}
+	}
+	.block-main-prices {
+		.main-prices-top {
+			h2 {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+			.choose-date {
+				width: 100%;
+			}
+		}
+		.main-rooms {
+			.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+				margin-right: 0;
+			}
+			.ui-tabs-vertical .ui-tabs-panel {
+				width: 100%;
+				padding-right: 0;
+			}
+			ul {
+				width: 100% !important;
+				.ui-state-active a, 
+				.ui-state-active a:link, 
+				.ui-state-active a:visited {
+					&:after {
+						display: none;
+					}
+				}
+			}
+			.tab {
+				.tab-info {
+					margin-bottom: 20px;
+				}
+			}
+			.block-conditions {
+				display: none;
+			}
+		}
+	}
+	.block-main-reviews {
+		display: none;
+	}
+	footer {
+		.block-contacts {
+			width: 100%;
+			h2 {
+				margin-left: 0;
+			}
+		}
+		.block-form {
+			margin-right: 5%;
+			margin-left: 5%;
+			.made-by {
+				text-align: center;
+			}
+		}
+	}
+}
+

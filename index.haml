@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+%html
+    %head
+        %meta{:charset => "UTF-8"}
+        %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"}
+        %title Hostel
+        %link{:rel => "stylesheet", :href => "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.css"}
+        %link{:rel => "stylesheet", :href => "css/jquery.bxslider.css"}/
+        %link{:rel => "stylesheet", :href => "css/easydropdown.css"}/
+        %link{:href => "css/style.css", :rel => "stylesheet"}
+        %script{:src => "js/jquery-1.11.3.min.js", :type => "text/javascript"}
+        %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js", :type => "text/javascript"}
+        %script{:src => "js/jquery.bxslider.min.js", :type => "text/javascript"}
+        %script{:src => "js/jquery.easydropdown.min.js", :type => "text/javascript"}
+        %script{:src => "js/main.js", :type => "text/javascript"}
+    %body.ru
+        .wrapper
+            %header
+                .container
+                    .header-top
+                        %img{:src => "img/header_logo2.png", :alt => "header_logo"}/
+                        .language 
+                            %button#lang 
+                                %span{:'data-i18n' => 'true', :'data-ru' => 'ENG', :'data-en' => 'RU'}
+                        .header-menu
+                            %button#show-menu Меню
+                            %ul
+                                %li
+                                    %a{:href => "#", :'data-i18n' => 'true', :'data-ru' => 'Номера и цены', :'data-en' => 'Rooms and rates'} 
+                                %li
+                                    %a{:href => "#", :'data-i18n' => 'true', :'data-ru' => 'Дополнительные услуги', :'data-en' => 'Additional services'} 
+                                %li
+                                    %a{:href => "#", :'data-i18n' => 'true', :'data-ru' => 'Что мы предлагаем', :'data-en' => 'What do we offer'} 
+                                %li
+                                    %a{:href => "#", :'data-i18n' => 'true', :'data-ru' => 'Отзывы', :'data-en' => 'Reviews'}  
+                                %li
+                                    %a{:href => "#", :'data-i18n' => 'true', :'data-ru' => 'Рядом с нами', :'data-en' => 'Next to us'}  
+                                %li
+                                    %a{:href => "#", :'data-i18n' => 'true', :'data-ru' => 'Как добраться', :'data-en' => 'Getting there'} 
+                                %li
+                                    %a{:href => "#", :'data-i18n' => 'true', :'data-ru' => 'Контакты', :'data-en' => 'Contacts'} 
+                    .header-main
+                        .block-header-main
+                            .highlight
+                                %h1{:"data-i18n" => "true", "data-en" => "HOSTEL in the center of Kiev", "data-ru" => "ХОСТЕЛ в центре Киева"} 
+                            .block-benefits
+                                .block-benefit.left
+                                    .text
+                                        %span{:"data-i18n" => "true", "data-en" => "card price of 150 USD / day", "data-ru" => "картой цена от 150 грн/сутки"}
+                                        .bold
+                                            %span{:"data-i18n" => "true", "data-en" => "Payment: Cash or", "data-ru" => "Оплата: наличными или"}
+                                .block-benefit.center
+                                    .text
+                                        .bold 
+                                            %span{:"data-i18n" => "true", "data-en" => "Convenient location", "data-ru" => "Удобное расположение"}
+                                        %span{:"data-i18n" => "true", "data-en" => "in the center of Kiev", "data-ru" => "в центре Киева"}
+                                .block-benefit.right
+                                    .text
+                                        .bold
+                                            %span{:"data-i18n" => "true", "data-en" => "8-6-2-1-bedded rooms", "data-ru" => "8-6-2-1-местные комнаты"} 
+                                        %span{:"data-i18n" => "true", "data-en" => "comfortable conditions", "data-ru" => "комфортные условия"} 
+                            %button
+                                %span{:'data-i18n' => 'true', :'data-ru' => 'ЗАБРОНИРОВАТЬ', :'data-en' => 'BOOK NOW'} 
+                        .block-header-contacts
+                            .number 
+                                +38 (044) 
+                                %span.bold 123-45-67
+                            .number 
+                                +38 (044) 
+                                %span.bold 123-45-67
+                            %button#modal1 
+                                %span{:'data-i18n' => 'true', :'data-ru' => 'Заказать звонок', :'data-en' => 'Request a call'} 
+            .block-main-menu
+                .container
+                    .main-menu 
+                        %ul
+                            %li
+                                %a{:href => "#", :'data-i18n' => 'true', :'data-ru' => 'Номера и цены', :'data-en' => 'Rooms and rates'} 
+                            %li
+                                %a{:href => "#", :'data-i18n' => 'true', :'data-ru' => 'Дополнительные услуги', :'data-en' => 'Additional services'} 
+                            %li
+                                %a{:href => "#", :'data-i18n' => 'true', :'data-ru' => 'Что мы предлагаем', :'data-en' => 'What do we offer'} 
+                            %li
+                                %a{:href => "#", :'data-i18n' => 'true', :'data-ru' => 'Отзывы', :'data-en' => 'Reviews'}  
+                            %li
+                                %a{:href => "#", :'data-i18n' => 'true', :'data-ru' => 'Рядом с нами', :'data-en' => 'Next to us'}  
+                            %li
+                                %a{:href => "#", :'data-i18n' => 'true', :'data-ru' => 'Как добраться', :'data-en' => 'Getting there'} 
+                            %li
+                                %a{:href => "#", :'data-i18n' => 'true', :'data-ru' => 'Контакты', :'data-en' => 'Contacts'} 
+                        .main-contacts
+                            .numbers
+                                +38 (044) 123-45-67
+                                %br/
+                                +38 (096) 123-45-67
+                        .main-order
+                            %button#modal2
+                                %span{:'data-i18n' => 'true', :'data-ru' => 'ЗАКАЗАТЬ ЗВОНОК', :'data-en' => 'REQUEST CALL'} 
+            .block-main-prices
+                .container
+                    .main-prices-top
+                        %h2{:"data-i18n" => "true", "data-en" => "ROOMS AND RATES", "data-ru" => "НОМЕРА И ЦЕНЫ"} 
+                        .choose-date
+                            .text{:"data-i18n" => "true", "data-en" => "cost:", "data-ru" => "Стоимость:"} 
+                            %select#date{:name => "choose-date", :lang => 'ru'}
+                                %option{:value => "1", :selected => "true"} с 30.12.15 до 10.01.16
+                                %option{:value => "2"} с 30.12.15 до 10.01.16
+                                %option{:value => "3"} с 30.12.15 до 10.01.16
+                                %option{:value => "4"} с 30.12.15 до 10.01.16
+                            %select#date2{:name => "choose-date", :lang => 'en'}
+                                %option{:value => "1", :selected => "true"} from 12/30/15 to 01/10/16
+                                %option{:value => "2"} from 12/30/15 to 01/10/16
+                                %option{:value => "3"} from 12/30/15 to 01/10/16
+                                %option{:value => "4"} from 12/30/15 to 01/10/16
+                    .main-rooms
+                        #tabs
+                            %ul
+                                %li
+                                    %a.both{:href => "#overall-eight", :"data-i18n" => "true", "data-en" => "COMMON <br/> 8 people", "data-ru" => "ОБЩИЙ <br/> 8 человек"}
+                                %li
+                                    %a.both{:href => "#overall-six", :"data-i18n" => "true", "data-en" => "COMMON <br/> 6 people", "data-ru" => "ОБЩИЙ <br/> 6 человек"}
+                                %li
+                                    %a.female{:href => "#female-six", :"data-i18n" => "true", "data-en" => "FEMALE <br/> 6 people", "data-ru" => "ЖЕНСКИЙ <br/> 6 человек"}
+                                %li
+                                    %a.male{:href => "#male-six", :"data-i18n" => "true", "data-en" => "MALE <br/> 6 people", "data-ru" => "МУЖСКОЙ <br/> 6 человек"}
+                                %li
+                                    %a.both{:href => "#vip-one", :"data-i18n" => "true", "data-en" => "VIP - 1 <br/> 1-2 people", "data-ru" => "VIP - 1 <br/> 1-2 человек"}
+                                %li
+                                    %a.both{:href => "#vip-two", :"data-i18n" => "true", "data-en" => "VIP - 2 <br/> 1-2 people", "data-ru" => "VIP - 2 <br/> 1-2 человек"}
+                            .tab#overall-eight
+                                .tab-info
+                                    .block-info
+                                        %h3{:"data-i18n" => "true", "data-en" => "COMMON room for 8 people", "data-ru" => "ОБЩИЙ номер для 8 человек"}
+                                        .text{:"data-i18n" => "true", "data-en" => "Large bunk beds, each bed measuring 90 cm by 200 cm, orthopedic mattresses. Bathroom on the floor. The room has individual lighting, lockers (lockers).", "data-ru" => "Большие двухъярусные кровати, каждое спальное место размером 90см на 200см, ортопедические матрасы. Санузел на этаже. В номере есть индивидуальное освещение, шкафчики с замками (локеры)."}
+                                        .text.price
+                                            %span.bold{:"data-i18n" => "true", "data-en" => "Sun.- Wed. 140 UAH", "data-ru" => "вс.- ср. 140 грн"}         
+                                            %span.bold{:"data-i18n" => "true", "data-en" => "Thus.- Sat. 150 UAH", "data-ru" => "чт.- сб. 150 грн"}           
+                                            %span{:"data-i18n" => "true", "data-en" => "place / day", "data-ru" => "место/сутки"} 
+                                        %button 
+                                            %span{:'data-i18n' => 'true', :'data-ru' => 'ЗАБРОНИРОВАТЬ', :'data-en' => 'BOOK NOW'}
+                                    .block-img
+                                        .img-large
+                                            %img#largeImg{:src => "img/slide_room_main.jpg", :alt => "slide_room_main"}/
+                                        #thumbs
+                                            %a{:href => "img/slide_room_1.jpg", :title => "Img 2"}
+                                                %img{:src => "img/slide_room_1.jpg", :alt => "slide_room_1"}/
+                                            %a{:href => "img/slide_room_2.jpg", :title => "Img 3"}
+                                                %img{:src => "img/slide_room_2.jpg", :alt => "slide_room_2"}/
+                                            %a{:href => "img/slide_room_3.jpg", :title => "Img 4"}
+                                                %img{:src => "img/slide_room_3.jpg", :alt => "slide_room_3"}/
+                                            %a{:href => "img/slide_room_4.jpg", :title => "Img 5"}
+                                                %img{:src => "img/slide_room_4.jpg", :alt => "slide_room_4"}/
+                                .block-conditions
+                                    %ul
+                                        %li
+                                            %span.bell
+                                            %div{:"data-i18n" => "true", "data-en" => "Check in at 14:00, <br/> exit 11-00", "data-ru" => "Заезд в 14-00, <br/> выезд в 11-00"}  
+                                        %li
+                                            %span.water
+                                            %div{:"data-i18n" => "true", "data-en" => "Hot <br/> water 24/7", "data-ru" => "Горячая <br/> вода 24/7"} 
+                                        %li
+                                            %span.wi-fi
+                                            %div{:"data-i18n" => "true", "data-en" => "Wi-Fi", 'data-ru' => "Wi-Fi"}
+                                        %li
+                                            %span.lamp
+                                            %div{:"data-i18n" => "true", "data-en" => "Individual <br/> lamps and sockets", 'data-ru' => "Индивидуальные <br/> светильники и розетки"}
+                                        %li
+                                            %span.key
+                                            %div{:"data-i18n" => "true", "data-en" => "Lockers <br/>  with locks", 'data-ru' => "Шкафчики <br/> на замках"}
+                                        %li
+                                            %span.bed
+                                            %div{:"data-i18n" => "true", "data-en" => "Bed linen and towels <br/> High Quality", 'data-ru' => "Постельное бельё и полотенца <br/> высокого качества"}
+                            .tab#overall-six
+                            .tab#female-six
+                            .tab#male-six
+                            .tab#vip-one
+                            .tab#vip-two
+            .block-main-reviews
+                .container
+                    %h2{:"data-i18n" => "true", "data-en" => "COMMENTS:", "data-ru" => "ОТЗЫВЫ:"}  
+                    %ul.bxslider
+                        %li
+                            %img{:src => "img/review-photo.png", :alt => "review-photo"}/
+                            %span{:"data-i18n" => "true", "data-en" => "Pierre, the company 'Montclair'", "data-ru" => "Пьер, компания “Монклер”"} 
+                            .text{:"data-i18n" => "true", "data-en" => "There were only positive emotions from visiting your hostel, nice room with a beautiful view, not far from the subway, and even in the center, very convenient))) Very comfortable almost homely atmosphere, cleanliness and grooming around. Great ratio of staff to guests, recreation. There is wi-fi, if there is no phone or tablet at hand, the hostel has a shared computer. The beds were comfortable, and the rooms were small lockers are provided, as well as hangers.", "data-ru" => "Остались только положительные эмоции от посещения вашего хостела, хорошая комната с красивым видом, не далеко до метро, да еще и в центре, очень удобно))) Очень уютная почти домашняя обстановка, чистота и ухоженность во всем. Потрясающее отношение персонала к гостям, организация отдыха. Есть wi-fi, если нет телефона или планшета под рукой, то в хостеле есть общий компьютер. Кровати были удобными, а в номере были предусмотрены небольшие индивидуальные шкафчики, также как и вешалки-плечики."}
+                        %li
+                            %img{:src => "img/review-photo.png", :alt => "review-photo"}/
+                            %span{:"data-i18n" => "true", "data-en" => "Pierre, the company 'Montclair'", "data-ru" => "Пьер, компания “Монклер”"} 
+                            .text{:"data-i18n" => "true", "data-en" => "There were only positive emotions from visiting your hostel, nice room with a beautiful view, not far from the subway, and even in the center, very convenient))) Very comfortable almost homely atmosphere, cleanliness and grooming around. Great ratio of staff to guests, recreation. There is wi-fi, if there is no phone or tablet at hand, the hostel has a shared computer. The beds were comfortable, and the rooms were small lockers are provided, as well as hangers.", "data-ru" => "Остались только положительные эмоции от посещения вашего хостела, хорошая комната с красивым видом, не далеко до метро, да еще и в центре, очень удобно))) Очень уютная почти домашняя обстановка, чистота и ухоженность во всем. Потрясающее отношение персонала к гостям, организация отдыха. Есть wi-fi, если нет телефона или планшета под рукой, то в хостеле есть общий компьютер. Кровати были удобными, а в номере были предусмотрены небольшие индивидуальные шкафчики, также как и вешалки-плечики."} 
+                        %li
+                            %img{:src => "img/review-photo.png", :alt => "review-photo"}/
+                            %span{:"data-i18n" => "true", "data-en" => "Pierre, the company 'Montclair'", "data-ru" => "Пьер, компания “Монклер”"} 
+                            .text{:"data-i18n" => "true", "data-en" => "There were only positive emotions from visiting your hostel, nice room with a beautiful view, not far from the subway, and even in the center, very convenient))) Very comfortable almost homely atmosphere, cleanliness and grooming around. Great ratio of staff to guests, recreation. There is wi-fi, if there is no phone or tablet at hand, the hostel has a shared computer. The beds were comfortable, and the rooms were small lockers are provided, as well as hangers.", "data-ru" => "Остались только положительные эмоции от посещения вашего хостела, хорошая комната с красивым видом, не далеко до метро, да еще и в центре, очень удобно))) Очень уютная почти домашняя обстановка, чистота и ухоженность во всем. Потрясающее отношение персонала к гостям, организация отдыха. Есть wi-fi, если нет телефона или планшета под рукой, то в хостеле есть общий компьютер. Кровати были удобными, а в номере были предусмотрены небольшие индивидуальные шкафчики, также как и вешалки-плечики."}
+                        %li
+                            %img{:src => "img/review-photo.png", :alt => "review-photo"}/
+                            %span{:"data-i18n" => "true", "data-en" => "Pierre, the company 'Montclair'", "data-ru" => "Пьер, компания “Монклер”"} 
+                            .text{:"data-i18n" => "true", "data-en" => "There were only positive emotions from visiting your hostel, nice room with a beautiful view, not far from the subway, and even in the center, very convenient))) Very comfortable almost homely atmosphere, cleanliness and grooming around. Great ratio of staff to guests, recreation. There is wi-fi, if there is no phone or tablet at hand, the hostel has a shared computer. The beds were comfortable, and the rooms were small lockers are provided, as well as hangers.", "data-ru" => "Остались только положительные эмоции от посещения вашего хостела, хорошая комната с красивым видом, не далеко до метро, да еще и в центре, очень удобно))) Очень уютная почти домашняя обстановка, чистота и ухоженность во всем. Потрясающее отношение персонала к гостям, организация отдыха. Есть wi-fi, если нет телефона или планшета под рукой, то в хостеле есть общий компьютер. Кровати были удобными, а в номере были предусмотрены небольшие индивидуальные шкафчики, также как и вешалки-плечики."} 
+            .block-main-remain
+                .container
+                    .remain-review
+                        %a{:href => "#", :"data-i18n" => "true", "data-en" => "Write to us", "data-ru" => "Напишите нам"}  
+                        %span{:"data-i18n" => "true", "data-en" => ", what would you change or add", "data-ru" => ", что бы Вы хотели изменить или добавить"}  
+            %footer
+                .container
+                    .block-contacts
+                        %h2{:"data-i18n" => "true", "data-en" => "CONTACTS:", "data-ru" => "КОНТАКТЫ:"} 
+                        .block-numbers
+                            %ul
+                                %li
+                                    .num +38 (044) 123-45-67
+                                %li
+                                    .kiev +38 (044) 123-45-67
+                                %li
+                                    .life +38 (044) 123-45-67
+                                %li
+                                    .voda +38 (044) 123-45-67
+                        %div
+                            .block-mail
+                                E-mail: 
+                                %span lightlife@hostel.kiev.ua
+                        .block-skype 
+                            %ul
+                                %li
+                                    .viber
+                                        Viber
+                                        %span +380961234567
+                                %li
+                                    .skype 
+                                        Skype
+                                        %span lightlife
+                        %div
+                            .block-adress
+                                .bold 
+                                    %span{:"data-i18n" => "true", "data-en" => "Kiev, st. Kikvidze, 1/2", "data-ru" => "г.Киев, ул. Киквидзе, 1/2"} 
+                                %span{:"data-i18n" => "true", "data-en" => "station 'Friendship of Peoples' m. 'Pechersk'", "data-ru" => "м. “Дружбы Народов”      м. “Печерск”"} 
+                    .block-form
+                        %form{:action => "#"}
+                            .block-form-top
+                                %h4{:"data-i18n" => "true", "data-en" => "or leave your request, <br/> we will contact you", "data-ru" => "или Оставьте заявку, <br/> мы свяжемся с Вами"} 
+                                .input-name
+                                    %span.name
+                                    %input{:type => "text", :placeholder => "Имя", :lang => "ru"}/
+                                    %input{:type => "text", :placeholder => "Name", :lang => "en"}/
+                                .input-number
+                                    %span.number
+                                    %input{:type => "text", :placeholder => "+38 (0____) ___ - ___ - ___"}/
+                            .btn
+                                %button 
+                                    %span{:'data-i18n' => 'true', :'data-ru' => 'ОТПРАВИТЬ', :'data-en' => 'SEND'} 
+                        .made-by
+                            %span{:'data-i18n' => 'true', :'data-ru' => 'Создание и продвижение', :'data-en' => 'Development and promotion'} 
+                            %a{:href => "#"} 
+                                BUSINESS
+                                %span SITE
+        #block-modal
+            .block-form
+                %form{:action => "#"}
+                    .block-form-top
+                        %h4{:"data-i18n" => "true", "data-en" => "We will contact you", "data-ru" => "Мы свяжемся с Вами"} 
+                        .input-name
+                            %span.name
+                            %input{:type => "text", :placeholder => "Имя", :lang => "ru"}/
+                            %input{:type => "text", :placeholder => "Name", :lang => "en"}/
+                        .input-number
+                            %span.number
+                            %input{:type => "text", :placeholder => "+38 (0____) ___ - ___ - ___"}/
+                    .btn
+                        %button 
+                            %span{:'data-i18n' => 'true', :'data-ru' => 'ОТПРАВИТЬ', :'data-en' => 'SEND'} 

@@ -1,0 +1,68 @@
+@import "get_sprite";
+@include all-images-sprites(true);
+
+@mixin media-sprite($sprite) {
+	@include get-sprite($images-sprites, $sprite);
+}
+
+@mixin font($size, $weight, $color: #000) {
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
+}
+
+@mixin img($image) {
+	@include images-sprite($image);
+	width: images-sprite-width($image);
+ 	height: images-sprite-height($image);
+}
+
+@mixin btn-main {
+	@include font(30px, 700, #fff);
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #58c7f2;
+	padding: 22px 105px 15px;
+	text-align: center;
+	display: block;
+	border:  none;
+	border-bottom: 8px solid #0e91c4;
+	letter-spacing: 1px;
+	&:focus {
+		outline: none;
+	}
+	&:active {
+		border-style: none;
+		opacity: .9;
+		border-bottom: 8px solid #0e91c4;
+	}
+	&:hover {
+		background-color: #0e91c4;
+	}
+}
+
+@mixin input-icon($icon) {
+	// @include background(#fff url(../img/footer_form_#{$icon}.png) no-repeat 10px 7px);
+}
+
+@mixin empty-pseudo {
+	content: ".";
+	font-size: 0;
+	color: transparent;
+}
+
+@mixin btn-main-full {
+	@include btn-main;
+	padding-left: 0;
+	padding-right: 0;
+	@include full-width;
+}
+
+@mixin full-width {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+
+
